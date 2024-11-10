@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Перевірка ПІБ та таблиця з кольорами</title>
+</head>
+<body>
+
+
+    <h2>Форма для перевірки ПІБ та адреси</h2>
+    <form id="infoForm">
+        <label for="name">ПІБ:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="group">Група:</label>
+        <input type="text" id="group" name="group" required>
+
+        <label for="faculty">Факультет:</label>
+        <input type="text" id="faculty" name="faculty" required>
+
+        <label for="address">Адреса:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="telegram">Telegram:</label>
+        <input type="text" id="telegram" name="telegram" required>
+
+        <button type="button" onclick="validateForm()">Перевірити</button>
+    </form>
+    <div id="output"></div>
+
+
+    <h2>Таблиця з варіантами кольорів</h2>
+    <table id="colorTable"></table>
+    <input type="color" id="colorPicker" value="#ff0000">
+
+    <script src="index.js"></script>
+</body>
+</html>
